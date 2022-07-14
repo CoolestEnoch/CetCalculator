@@ -1,0 +1,29 @@
+{
+  "easyGoVersion": "1.0",
+  "client": "com.coolest.cet4.calculator",
+  "logicEntities": [
+    {
+      "head": {
+        "function": "magicwindow",
+        "required": "true"
+      },
+      "body": {
+        "mode": "1",
+        "defaultDualActivities": {
+          "mainPages": "com.coolest.cet4.calculator.ScrollingActivity",
+          "relatedPage": "com.coolest.cet4.calculator.ScrollingActivity"
+        },
+        "UX": {
+          "windowsRatio": [
+            {
+              "device": "PAD",
+              "ratio": "900|1654"
+            }
+          ],
+          "supportRotationUxCompat": "false",
+          "isDraggable": "true"
+        }
+      }
+    }
+  ]
+}

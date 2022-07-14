@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://demo.umoban.cn/demo/5345/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<script type="text/javascript">
+			window.onload=snow;
+			var int=self.setInterval("snow()",3500);
+			var int2=self.setInterval("snow2()",4000);
+			function snow(){
+				var div=document.createElement("div");
+				div.className="snow";
+				var bo=document.body;
+				bo.insertBefore(div,bo.lastChild);	
+				
+			}
+			setTimeout("clearInterval(int)",35000);
+			function snow2(){
+				var div=document.createElement("div");
+				div.className="snow2";
+				var bo=document.body;
+				bo.insertBefore(div,bo.lastChild);	
+			}
+			setTimeout("clearInterval(int2)",40000);
+		</script>
+		<title></title>
+		<style>
+		/* animation-duration: 1s;延时1s */
+body{
+	margin: 0;
+	height: 100vh;
+	align-content: center;
+	justify-content: center;
+	font-size: 18px;
+	overflow: hidden;
+	background-size: 400%;
+	background-image: linear-gradient(130deg,#d7e7ff,#99dfff,#abe1e0,#99dfff,#d8edff,#ffefe0,#fff7f2,#77acda,#4e74da,#4a74ff,#0d5cda,#694fff);
+	animation:move 105s infinite linear;
+}
+@keyframes move{
+	0%{background-position:0% 0%;}
+	50%{background-position:100% 400%;}
+	100%{background-position:0% 0%;}
+}
+#dimian_all{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	backdrop-filter: blur(2px);
+	}
+#dimian1{
+	position: absolute;
+	box-sizing: border-box;
+	top: 15em;
+	left: 0em;
+	border-bottom: 20em solid #14222d;
+	border-top: 20em solid transparent;
+	border-left: 20em solid #14222d;
+	border-right: 20em solid transparent;
+}
+#dimian2{
+	position: absolute;
+	width: 100%;
+	height: 7em;
+	background: #14222d;
+	top: 50em;
+}
+#dimian3{
+	position: absolute;
+	width: 40em;
+	height: 5em;
+	background: #14222d;
+	top: 49em;
+	left: 30em;
+	border-radius:50% ;
+}
+#dimian4{
+	position: absolute;
+	top: 3em;
+	left: 45em;
+	border-bottom: 30em solid #14222d;
+	border-top: 30em solid transparent;
+	border-left: 40em solid transparent;
+	border-right: 80em solid transparent;
+	transform: rotate(-2deg);
+}
+#jianzhu{
+	position: absolute;
+	top: 17em;
+	left: 81em;
+	width: 8em;
+	border-bottom: 10em solid #14222d;
+	border-top: 10em solid transparent;
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
+}
+#jianzhu2{
+	position: absolute;
+	top: 9em;
+	left: 81em;
+	border-bottom: 8em solid #14222d;
+	border-top: 10em solid transparent;
+	border-left: 5em solid transparent;
+	border-right: 5em solid transparent;
+}
+#jianzhu2::before{
+	content: '';
+	position: absolute;
+	background: #93e8ff;
+	width: 1em;
+	height: 1em;
+	top: 7.1em;
+	left: -0.5em;
+	transform: rotate(45deg);
+}
+#shu{
+	position: absolute;
+	top: 15em;
+	left: 10em;
+	border-bottom: 15em solid #14222d;
+	border-top: 3em solid transparent;
+	border-left: 3em solid transparent;
+	border-right: 3em solid transparent;
+}
+#shu2{
+	position: absolute;
+	top: 25em;
+	left: 17em;
+	border-bottom: 10em solid #14222d;
+	border-top: 3em solid transparent;
+	border-left: 2em solid transparent;
+	border-right: 2em solid transparent;
+}
+#shu3{
+	position: absolute;
+	top: 27em;
+	left: 100em;
+	border-bottom: 15em solid #14222d;
+	border-top: 3em solid transparent;
+	border-left: 3em solid transparent;
+	border-right: 3em solid transparent;
+}
+#shu4{
+	position: absolute;
+	top: 33em;
+	left: 72em;
+	border-bottom: 10em solid #14222d;
+	border-top: 3em solid transparent;
+	border-left: 2em solid transparent;
+	border-right: 2em solid transparent;
+}
+#shu5{
+		position: absolute;
+		top: 31em;
+		left: 94em;
+		width: 5em;
+		height: 5em;
+		border-radius: 50%;
+		background: #14222d;
+}
+#shu5::before{
+	position: absolute;
+	top: -4em;
+	left: 0.5em;
+	content: '';
+	border-bottom: 2em solid #14222d;
+	border-top: 3em solid transparent;
+	border-left: 2em solid transparent;
+	border-right: 2em solid transparent;
+}
+#shu5::after{
+	position: absolute;
+	top: 3em;
+	left: 2em;
+	content: '';
+	width: 1em;
+	height: 5em;
+	background: #14222d;
+}
+#rota{
+	position: absolute;
+	height: 100em;
+	width: 3em;
+	top: 0em;
+	left: 45em;
+	transform-origin: center center;
+	z-index: -1;
+	animation: riyue 105s infinite linear;
+}
+@keyframes riyue{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+#riyue{
+	backdrop-filter: blur(10em);
+	position: absolute;
+	background: #b6e2ff;
+	width: 3em;
+	height: 3em;
+	top: 0em;
+	left: 0em;
+	border-radius: 50%;
+	filter: blur(1px) opacity(95%);
+	box-shadow:inset 0px 0px 0px 200px #FFFFFF,
+	0px 0px 300px #ffffff,
+	0px 0px 150px #ffffff,0px 0px 100px #ffffff,
+	0px 0px 200px #ffffff,0px 0px 450px #ffffff,
+	0px 0px 650px #ffffff,0px 0px 300px #ffffff,
+	0px 0px 150px #ffffff,0px 0px 100px #ffffff,
+	0px 0px 200px #ffffff,0px 0px 450px #ffffff,
+	0px 0px 650px #ffffff;
+}
+#riyue::before{
+	backdrop-filter: blur(10em);
+	position: absolute;
+	content: '';
+	width: 4em;
+	height: 4em;
+	top: 92em;
+	left: 0em;
+	border-radius: 50%;
+	border-left: 20px solid #ffffff;
+	filter: blur(1px) opacity(95%) drop-shadow(0px 0px 20px white);
+}
+#yun1{
+	position: absolute;
+	width: 15em;
+	height: 2em;
+	top: 10em;
+	left: 120em;
+	border-radius: 20em 20em 3em 3em/20em 20em 10em 10em;
+	background: white;
+	opacity: 0.4;
+	z-index: -1;
+	animation: yun 40s infinite linear;
+}
+@keyframes yun{
+	from{ opacity: 0.4;}
+	to{left: -20em; opacity: 0;}
+}
+@keyframes yun2{
+	from{ opacity: 0.4;}
+	to{left: -40em; opacity: 0;}
+}
+#yun1::before{
+	position: absolute;
+	content: '';
+	width: 20em;
+	height: 3.5em;
+	top: 2em;
+	left: -2em;
+	border-radius: 40em;
+	background: white;
+}
+#yun1:after{
+	position: absolute;
+	content: '';
+	width: 10em;
+	height: 6em;
+	top: -1em;
+	left: 5.5em;
+	border-radius: 40em;
+	background: white;
+}
+#yun2{
+	position: absolute;
+	width: 15em;
+	height: 2em;
+	top: 3em;
+	left: 150em;
+	border-radius: 20em 20em 3em 3em/20em 20em 10em 10em;
+	background: white;
+	opacity: 0.4;
+	z-index: -1;
+	animation: yun 50s infinite linear;
+}
+#yun2::before{
+	position: absolute;
+	content: '';
+	width: 20em;
+	height: 3.5em;
+	top: 2em;
+	left: -2em;
+	border-radius: 40em;
+	background: white;
+}
+#yun2:after{
+	position: absolute;
+	content: '';
+	width: 10em;
+	height: 6em;
+	top: -1em;
+	left: 5.5em;
+	border-radius: 40em;
+	background: white;
+}
+#yun3{
+	position: absolute;
+	width: 15em;
+	height: 2em;
+	top: 30em;
+	left: 180em;
+	border-radius: 20em 20em 3em 3em/20em 20em 10em 10em;
+	background: white;
+	opacity: 0.4;
+	z-index: -1;
+	animation: yun2 30s infinite linear;
+}
+#yun3::before{
+	position: absolute;
+	content: '';
+	width: 20em;
+	height: 3.5em;
+	top: 2em;
+	left: -2em;
+	border-radius: 40em;
+	background: white;
+}
+#yun3:after{
+	position: absolute;
+	content: '';
+	width: 10em;
+	height: 6em;
+	top: -1em;
+	left: 5.5em;
+	border-radius: 40em;
+	background: white;
+}
+#yun4{
+	position: absolute;
+	width: 15em;
+	height: 2em;
+	top: 14em;
+	left: 140em;
+	border-radius: 20em 20em 3em 3em/20em 20em 10em 10em;
+	background: white;
+	opacity: 0.4;
+	z-index: -1;
+	animation: yun 45s infinite linear;
+}
+#yun4::before{
+	position: absolute;
+	content: '';
+	width: 20em;
+	height: 3.5em;
+	top: 2em;
+	left: -2em;
+	border-radius: 40em;
+	background: white;
+}
+#yun4:after{
+	position: absolute;
+	content: '';
+	width: 10em;
+	height: 6em;
+	top: -1em;
+	left: 5.5em;
+	border-radius: 40em;
+	background: white;
+}
+#yun5{
+	position: absolute;
+	width: 15em;
+	height: 2em;
+	top: 3em;
+	left: 160em;
+	border-radius: 20em 20em 3em 3em/20em 20em 10em 10em;
+	background: white;
+	opacity: 0.4;
+	z-index: -1;
+	animation: yun2 32s infinite linear;
+}
+#yun5::before{
+	position: absolute;
+	content: '';
+	width: 20em;
+	height: 3.5em;
+	top: 2em;
+	left: -2em;
+	border-radius: 40em;
+	background: white;
+}
+#yun5:after{
+	position: absolute;
+	content: '';
+	width: 10em;
+	height: 6em;
+	top: -1em;
+	left: 5.5em;
+	border-radius: 40em;
+	background: white;
+}
+#yun6{
+	position: absolute;
+	width: 15em;
+	height: 2em;
+	top: 17em;
+	left: 130em;
+	border-radius: 20em 20em 3em 3em/20em 20em 10em 10em;
+	background: white;
+	opacity: 0.4;
+	z-index: -1;
+	animation: yun2 60s infinite linear;
+}
+#yun6::before{
+	position: absolute;
+	content: '';
+	width: 20em;
+	height: 3.5em;
+	top: 2em;
+	left: -2em;
+	border-radius: 40em;
+	background: white;
+}
+#yun6:after{
+	position: absolute;
+	content: '';
+	width: 10em;
+	height: 6em;
+	top: -1em;
+	left: 5.5em;
+	border-radius: 40em;
+	background: white;
+}
+#fengche li{
+      border: 3px solid #14222d;
+      width: 3em;
+      height: 2em;
+      list-style-type: none;
+      margin-top: -3px;
+      
+}
+#fengche{
+	position: absolute;
+	left: 84.4em;
+	top: 17em;
+	transform: rotate(-45deg);
+	animation: rota 10s infinite linear;
+}
+@keyframes rota{
+	0%{transform: rotate(-45deg);}
+	100%{transform: rotate(315deg);}
+}
+#fengche2 li{
+      border: 3px solid #14222d;
+      width: 3em;
+      height: 2em;
+      list-style-type: none;
+      margin-top: -3px;
+}
+#fengche2{
+	position: absolute;
+	left: 84.3em;
+	top: 17em;
+	transform: rotate(45deg);
+	animation: rota2 10s infinite linear;
+}
+@keyframes rota2{
+	0%{transform: rotate(45deg);}
+	100%{transform: rotate(405deg);}
+}
+#background1{
+	position: absolute;
+	top: 32em;
+	left: 17em;
+	border-bottom: 20em solid #508bb3;
+	border-top: 3em solid transparent;
+	border-left: 40em solid transparent;
+	border-right: 50em solid transparent;
+	z-index: -1;
+	filter: blur(1px);
+}
+#background1::before{
+	position: absolute;
+	content: '';
+	top: -4em;
+	left: -3em;
+	border-bottom: 4em solid #508bb3;
+	border-top: 3em solid transparent;
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
+	filter: drop-shadow(110px 25px 0px #508bb3);
+}
+#background1::after{
+	position: absolute;
+	content: '';
+	top: -1em;
+	left: -8em;
+	border-bottom: 4em solid #508bb3;
+	border-top: 3em solid transparent;
+	border-left: 0.5em solid transparent;
+	border-right: 0.5em solid transparent;
+	filter: drop-shadow(-90px 30px 0px #508bb3);
+}
+#background2{
+	position: absolute;
+	top: 30em;
+	left: -5em;
+	border-bottom: 25em solid #6096c4;
+	border-top: 3em solid transparent;
+	border-left: 40em solid transparent;
+	border-right: 40em solid transparent;
+	z-index: -2;
+	filter: blur(1px);
+}
+#background2::before{
+	position: absolute;
+	content: '';
+	top: -5em;
+	left: 2em;
+	border-bottom: 4em solid #6096c4;
+	border-top: 3em solid transparent;
+	border-left: 0.5em solid transparent;
+	border-right: 0.5em solid transparent;
+	filter: drop-shadow(-90px 30px 0px #6096c4);
+}
+#background2::after{
+	position: absolute;
+	content: '';
+	top: 0em;
+	left: -8em;
+	border-bottom: 4em solid #6096c4;
+	border-top: 3em solid transparent;
+	border-left: 0.5em solid transparent;
+	border-right: 0.5em solid transparent;
+	filter: drop-shadow(250px -20px 0px #6096c4);
+}
+#background3{
+	position: absolute;
+	top: 26em;
+	left: 2em;
+	border-bottom: 20em solid #649ecd;
+	border-top: 3em solid transparent;
+	border-left: 20em solid transparent;
+	border-right: 20em solid transparent;
+	z-index: -3;
+	filter: blur(1px);
+}
+#background3::before{
+	position: absolute;
+	content: '';
+	top: -2em;
+	left: -6em;
+	border-bottom: 10em solid #649ecd;
+	border-top: 3em solid transparent;
+	border-left: 10em solid transparent;
+	border-right: 10em solid transparent;
+	filter: blur(1px) ;
+}
+#background3::after{
+	position: absolute;
+	content: '';
+	top: -10em;
+	left: -5em;
+	border-bottom: 20em solid #649ecd;
+	border-top: 3em solid transparent;
+	border-left: 20em solid transparent;
+	border-right: 20em solid transparent;
+	filter: blur(1px) ;
+}
+#background4{
+	position: absolute;
+	top: 10em;
+	left: 18em;
+	border-bottom: 30em solid #649ecd;
+	border-top: 3em solid transparent;
+	border-left: 36em solid transparent;
+	border-right: 36em solid transparent;
+	z-index: -3;
+	filter: blur(1px);
+}
+.snow{
+	position: absolute;
+	width: 0.5em;
+	height: 0.5em;
+	background-color: #d4f6ff;
+	top: -1em;
+	left: -1em;
+	transform: rotate(45deg);
+	animation: snow 35s infinite linear;
+	opacity: 0.5;
+}
+@keyframes snow{
+	0%{
+		top: -1em;
+		left: -1em;}
+	10%{
+		top: 3em;
+		left: 8em;
+	}
+	20%{top: 9em;
+	left: 4em;}
+	30%{top: 15em;
+	left: 10em;}
+	40%{top: 21em;
+	left: 8em;}
+	50%{top: 27em;
+	left: 21em;}
+	60%{top: 32em;
+	left: 40em;}
+	70%{top: 40em;
+	left: 30em;}
+	80%{top: 44em;
+	left: 54em;}
+	90%{top: 50em;
+	left: 70em;}
+	100%{top: 53em;
+	left: 63em;opacity: 0;}
+}
+.snow2{
+	position: absolute;
+	width: 0.5em;
+	height: 0.5em;
+	background-color: #d7ffff;
+	top: -1em;
+	left: 100em;
+	transform: rotate(45deg);
+	animation: snow2 40s infinite linear;
+	opacity: 0.4;
+}
+@keyframes snow2{
+	0%{
+		top: -1em;
+		left: 100em;}
+	10%{
+		top: 3em;
+		left: 88em;
+	}
+	20%{top: 9em;
+	left: 97em;}
+	30%{top: 15em;
+	left: 79em;}
+	40%{top: 21em;
+	left: 70em;}
+	50%{top: 27em;
+	left: 81em;}
+	60%{top: 32em;
+	left: 69em;}
+	70%{top: 40em;
+	left: 55em;}
+	80%{top: 44em;
+	left: 40em;}
+	90%{top: 50em;
+	left: 55em;}
+	100%{top: 53em;
+	left: 27em;opacity: 0;}
+}
+		</style>
+	</head>
+	<body>
+		<div id="dimian_all">
+		<div id="dimian1">
+		</div>
+		<div id="dimian2">
+			
+		</div>
+		<div id="dimian3">
+			
+		</div>
+		<div id="dimian4">
+			
+		</div>
+		<div id="jianzhu">
+			
+		</div>
+		<div id="jianzhu2">
+			
+		</div>
+		<div id="shu"></div>
+		<div id="shu2"></div>
+		<div id="shu3"></div>
+		<div id="shu4"></div>
+		<div id="shu5"></div>
+		<div id="rota">
+		<div id="riyue"></div>
+		</div>
+		<div id="yun1"></div>
+		<div id="yun2"></div>
+		<div id="yun3"></div>
+		<div id="yun4"></div>
+		<div id="yun5"></div>
+		<div id="yun6"></div>
+		<div id="fengche">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</div>
+		<div id="fengche2">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</div>
+		<div id="background1"></div>
+		<div id="background2"></div>
+		<div id="background3"></div>
+		<div id="background4"></div>
+		</div><div class="snow"></div><div class="snow"></div><div class="snow2"></div>
+	
+
+</body></html>
