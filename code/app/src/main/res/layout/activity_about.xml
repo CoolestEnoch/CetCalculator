@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ui.AboutActivity">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="centerCrop"
+			android:id="@+id/bgAbout"/>
+
+		<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/swipeRefresh"
+			tools:ignore="MissingConstraints">
+
+			<ScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginHorizontal="12dp"
+							android:text="作者"
+							android:textColor="@color/black_text"
+							android:textSize="50dp"
+							android:textStyle="bold" />
+
+						<LinearLayout
+							android:id="@+id/author_list_view"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="vertical">
+
+							<com.google.android.material.card.MaterialCardView
+								android:id="@+id/card_author"
+								style="@style/DefaultCard"
+								app:cardBackgroundColor="@color/normal_card_bg">
+
+								<LinearLayout
+									android:id="@+id/author_layout"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content">
+
+									<RelativeLayout
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:orientation="horizontal">
+
+										<ImageView
+											android:id="@+id/author_icon"
+											android:layout_width="28dp"
+											android:layout_height="28dp"
+											android:layout_centerVertical="true"
+											android:layout_gravity="center_vertical"
+											android:layout_marginStart="20dp"
+											android:layout_marginEnd="16dp"
+											android:src="@drawable/ic_baseline_sports_kabaddi_24" />
+
+										<LinearLayout
+											android:id="@+id/author_info"
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:layout_centerVertical="true"
+											android:layout_toLeftOf="@+id/author_github"
+											android:layout_toRightOf="@+id/author_icon"
+											android:orientation="vertical"
+											android:paddingVertical="25dp">
+
+											<TextView
+												android:layout_width="wrap_content"
+												android:layout_height="wrap_content"
+												android:text="Coolest Enoch"
+												android:textColor="@color/white"
+												android:textSize="24dp"
+												android:textStyle="bold" />
+										</LinearLayout>
+
+										<ImageView
+											android:id="@+id/author_github"
+											android:layout_width="28dp"
+											android:layout_height="28dp"
+											android:layout_alignParentEnd="true"
+											android:layout_centerVertical="true"
+											android:layout_gravity="center_vertical"
+											android:layout_marginStart="20dp"
+											android:layout_marginEnd="16dp"
+											android:src="@drawable/github" />
+
+									</RelativeLayout>
+
+								</LinearLayout>
+
+							</com.google.android.material.card.MaterialCardView>
+						</LinearLayout>
+
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="12dp"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginHorizontal="12dp"
+							android:text="贡献者"
+							android:textColor="@color/black_text"
+							android:textSize="50dp"
+							android:textStyle="bold" />
+
+						<LinearLayout
+							android:id="@+id/contributor_list_view"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="vertical">
+
+							<com.google.android.material.card.MaterialCardView
+								android:id="@+id/contributor_card"
+								style="@style/DefaultCard"
+								app:cardBackgroundColor="@color/normal_card_bg">
+
+								<LinearLayout
+									android:id="@+id/contributor_layout"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content">
+
+									<RelativeLayout
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:orientation="horizontal">
+
+										<ImageView
+											android:id="@+id/contributor_icon"
+											android:layout_width="28dp"
+											android:layout_height="28dp"
+											android:layout_centerVertical="true"
+											android:layout_gravity="center_vertical"
+											android:layout_marginStart="20dp"
+											android:layout_marginEnd="16dp"
+											android:src="@drawable/ic_baseline_sports_kabaddi_24" />
+
+										<LinearLayout
+											android:id="@+id/contributor_info"
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:layout_centerVertical="true"
+											android:layout_toLeftOf="@+id/contributor_github"
+											android:layout_toRightOf="@+id/contributor_icon"
+											android:orientation="vertical"
+											android:paddingVertical="25dp">
+
+											<TextView
+												android:id="@+id/contributorListTip"
+												android:layout_width="wrap_content"
+												android:layout_height="wrap_content"
+												android:text="请联网获取列表..."
+												android:textColor="@color/white"
+												android:textSize="24dp"
+												android:textStyle="bold" />
+										</LinearLayout>
+
+										<ImageView
+											android:id="@+id/contributor_github"
+											android:layout_width="28dp"
+											android:layout_height="28dp"
+											android:layout_alignParentEnd="true"
+											android:layout_centerVertical="true"
+											android:layout_gravity="center_vertical"
+											android:layout_marginStart="20dp"
+											android:layout_marginEnd="16dp"
+											android:src="@drawable/github" />
+
+									</RelativeLayout>
+
+								</LinearLayout>
+
+							</com.google.android.material.card.MaterialCardView>
+						</LinearLayout>
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</ScrollView>
+
+		</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>

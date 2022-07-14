@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/webview_layout"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/webview_liner_layout"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent"
+        android:alpha="1"
+        android:orientation="horizontal"
+        android:paddingTop="0sp"
+        tools:ignore="MissingConstraints,WebViewLayout">
+
+        <WebView
+            android:id="@+id/bg_webview"
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

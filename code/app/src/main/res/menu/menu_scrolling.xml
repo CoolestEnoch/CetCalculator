@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.coolest.cet4.calculator.ui.ScrollingActivity">
+
+    <item
+        android:id="@+id/gotoToolbox"
+        app:showAsAction="always"
+        android:title="大学生实用工具箱"
+        android:icon="@drawable/ic_baseline_sports_kabaddi_24"/>
+
+    <item
+        android:id="@+id/release_notes"
+        app:showAsAction="always"
+        android:icon="@mipmap/notepaad_win11"
+        android:title="更新日志" />
+
+    <item
+        android:id="@+id/author_button"
+        app:showAsAction="always"
+        android:icon="@mipmap/sunglass_huaji"
+        android:title="关于作者" />
+
+<!--    <item-->
+<!--        android:id="@+id/action_clear"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="清空"-->
+<!--        app:showAsAction="never" />-->
+</menu>

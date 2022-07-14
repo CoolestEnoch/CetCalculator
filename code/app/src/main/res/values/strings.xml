@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">四六级算分器</string>
+	<string name="large_text">"这是一个bug，暂时得竖屏用\n\n"</string>
+	<string name="action_settings">Settings</string>
+</resources>

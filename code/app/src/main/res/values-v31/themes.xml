@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.四级算分器" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/material_dynamic_primary50</item>
+        <item name="colorPrimaryVariant">@color/material_dynamic_primary70</item>
+        <item name="colorOnPrimary">@color/material_dynamic_tertiary95</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/material_dynamic_secondary20</item>
+        <item name="colorSecondaryVariant">@color/material_dynamic_secondary70</item>
+        <item name="colorOnSecondary">@color/material_dynamic_tertiary0</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

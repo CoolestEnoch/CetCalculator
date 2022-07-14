@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+		android:id="@+id/mainRefreshLayout"
+		android:layout_width="match_parent"
+		android:layout_height="0dp" />
+
+	<LinearLayout
+		android:id="@+id/mainLinerLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/text_margin"
+		android:background="@color/transparent"
+		android:orientation="vertical"
+		tools:ignore="MissingConstraints">
+
+		<!--        <include layout="@layout/fluid_web_bg"/>-->
+		<!--这里不include也行-->
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:textColor="@color/black_text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="听力部分"
+				android:textSize="40sp"
+				android:textStyle="bold" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="15sp">
+
+				<TextView
+					android:id="@+id/listen_section_A_tip"
+					android:textColor="@color/black_text"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:paddingTop="0dp"
+					android:text="1-7题对几个" />
+
+				<EditText
+					android:id="@+id/listen_section_A"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="输入0-7的整数"
+					android:inputType="numberDecimal"
+					android:paddingTop="0dp" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="15sp">
+
+				<TextView
+					android:id="@+id/listen_section_B_tip"
+					android:textColor="@color/black_text"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:paddingTop="0dp"
+					android:text="8-15题对几个" />
+
+				<EditText
+					android:id="@+id/listen_section_B"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="输入0-8的整数"
+					android:inputType="numberDecimal"
+					android:numeric="integer"
+					android:paddingTop="0dp"
+					tools:ignore="Deprecated" />
+
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="15sp">
+
+				<TextView
+					android:textColor="@color/black_text"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:paddingTop="0dp"
+					android:text="16-25题对几个" />
+
+				<EditText
+					android:id="@+id/listen_section_C"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="输入0-10的整数"
+					android:inputType="numberDecimal"
+					android:paddingTop="0dp"
+					tools:ignore="Deprecated" />
+
+			</LinearLayout>
+
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingTop="20sp">
+
+			<TextView
+				android:textColor="@color/black_text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+
+				android:text="阅读部分"
+				android:textSize="40sp"
+				android:textStyle="bold" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="15sp">
+
+				<TextView
+					android:textColor="@color/black_text"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:paddingTop="0dp"
+					android:text="十五选十对几个" />
+
+				<EditText
+					android:id="@+id/reading_section_A"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="26-35题,输入0-10的整数"
+					android:inputType="numberDecimal"
+					android:paddingTop="0dp"
+					tools:ignore="Deprecated" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="15sp">
+
+				<TextView
+					android:textColor="@color/black_text"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:paddingTop="0dp"
+					android:text="快速阅读对几个" />
+
+				<EditText
+					android:id="@+id/reading_section_B"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="36-45题,输入0-10的整数"
+					android:inputType="numberDecimal"
+					android:paddingTop="0dp"
+					tools:ignore="Deprecated" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="15sp">
+
+				<TextView
+					android:textColor="@color/black_text"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:paddingTop="0dp"
+					android:text="仔细阅读对几个" />
+
+				<EditText
+					android:id="@+id/reading_section_C"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="46-55题,输入0-10的整数"
+					android:inputType="numberDecimal"
+					android:paddingTop="0dp"
+					tools:ignore="Deprecated" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:textColor="@color/black_text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+
+				android:text="其他"
+				android:textSize="40sp"
+				android:textStyle="bold" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="15sp">
+
+				<TextView
+					android:textColor="@color/black_text"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:paddingTop="0dp"
+					android:text="写作分数" />
+
+				<EditText
+					android:id="@+id/writing_inp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="输入0-15的整数"
+					android:inputType="numberDecimal"
+					android:paddingTop="0dp"
+					tools:ignore="Deprecated" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="15sp">
+
+				<TextView
+					android:textColor="@color/black_text"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:paddingTop="0dp"
+					android:text="翻译分数" />
+
+				<EditText
+					android:id="@+id/translate_inp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="输入0-15的整数"
+					android:inputType="numberDecimal"
+					android:paddingTop="0dp"
+					tools:ignore="Deprecated" />
+
+			</LinearLayout>
+
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<com.google.android.material.card.MaterialCardView
+		android:id="@+id/cet_select_btn"
+		style="@style/DefaultCard"
+		android:layout_gravity="center"
+		android:onClick="TODO_onClick"
+		app:cardBackgroundColor="@color/normal_card_bg">
+
+		<LinearLayout
+			style="@style/Default"
+			android:orientation="horizontal">
+
+			<ImageView
+				style="@style/DefaultImage"
+				android:src="@drawable/ic_baseline_double_arrow_24" />
+
+			<TextView
+				style="@style/DefaultText.Option.Card"
+				android:text="选择学段" />
+		</LinearLayout>
+	</com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

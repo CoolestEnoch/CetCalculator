@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:id="@+id/toolboxActivityView"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".ui.ToolboxActivity">
+
+	<com.google.android.material.card.MaterialCardView
+		android:id="@+id/bullshitBtn"
+		style="@style/DefaultCard"
+		app:cardBackgroundColor="@color/teal_200">
+		<LinearLayout
+			style="@style/Default"
+			android:orientation="horizontal">
+			<ImageView
+				style="@style/DefaultImage"
+				android:src="@drawable/ic_baseline_verified_user_24" />
+			<TextView
+				style="@style/DefaultText.Option.Card"
+				android:text="狗屁不通文章生成器" />
+		</LinearLayout>
+	</com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
