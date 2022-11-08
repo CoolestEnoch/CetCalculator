@@ -18,5 +18,5 @@
 ### [Glide](https://github.com/bumptech/glide)
 ### [OkHttp](https://github.com/square/okhttp)
 ### [Swipe Refresh Layout](https://developer.android.google.cn/reference/android/support/v4/widget/SwipeRefreshLayout.html)
-### [BullshitGenerator](https://github.com/suulnnka/BullshitGenerator/)
+### [BullshitGenerator](https://github.com/menzi11/BullshitGenerator)
 
