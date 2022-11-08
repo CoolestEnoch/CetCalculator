@@ -3,6 +3,8 @@
 
 # 这是个啥？ / What's this? 🤔
 > 可以帮你计算四六级模拟卷上的成绩，辅助你的学习 / Helps you to calculate score on your CET4/6 paper in order to help you improve your study
+> 
+> 同时也可以帮你快速生成水课所需的万字长文报告 / BTW it can also helps you to generate meanless classes's loooooooooog article (lol)
 
 # 已实现功能 / Features already implemented 💥
 - [x] 四六级分数计算器 / CET-4/6 score calculator
