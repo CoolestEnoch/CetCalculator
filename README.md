@@ -14,6 +14,7 @@
 # 未来待实现功能(咕咕咕) / Under development 🕊️
 - [ ] 试卷分数历史记录 / Score history
 - [ ] ??? / IDK(lol)
+~~ 24岁，是个学生，上述功能看心情更新。 / When to finish development depends on my mood ~~
 
 # 支持的平台 / Supported platform 📱
 - [x] 安卓6.0及以上系统 / Android 6.0+
