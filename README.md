@@ -9,6 +9,10 @@
 - [x] 分数分快明细 / Detailed score
 - [x] 狗屁不通文章生成器 / Bullshit article generator
 
+# 未来待实现功能(咕咕咕) / Under development
+- [ ] 试卷分数历史记录 / Score history
+- [ ] ??? / IDK(lol)
+
 # 用到的开源项目 / Used libraries
 ### [PermissionX](https://github.com/guolindev/PermissionX)
 ### [Glide](https://github.com/bumptech/glide)
