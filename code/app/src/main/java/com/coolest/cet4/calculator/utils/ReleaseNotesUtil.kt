@@ -77,6 +77,8 @@ object ReleaseNotesUtil {
 			add(Version(2.622, "[修复]无法算分的异常" + tab_and_new_line + "[优化]透明通知栏适配"));
 			add(Version(2.631, "[新增]大学生实用工具箱"));
 			add(Version(2.7, "[适配]Material You 动态配色算法\n(需更新手机系统至Android 12或更高版本)"));
+			add(Version(2.71, "[修复]分数显示乱跳" + tab_and_new_line +"[修复]快速频繁点击算分可能导致的闪退问题" + tab_and_new_line + "[新增]一次算分，三条细则"));
+			add(Version(2.72, "[适配]Android 13预测性返回手势\n(需更新系统至Android 13或更高版本)"));
 //			add(Version(2.333, "[画饼]增加历史成绩储存功能\n"));
 		}
 		Collections.reverse(noteList)

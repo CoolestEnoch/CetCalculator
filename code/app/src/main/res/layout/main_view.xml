@@ -20,6 +20,32 @@
 		android:orientation="vertical"
 		tools:ignore="MissingConstraints">
 
+		<LinearLayout
+			android:visibility="gone"
+			android:id="@+id/mainViewScoreLayout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:textColor="@color/black_text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="成绩: "
+				android:textSize="40sp"
+				android:textStyle="bold|italic" />
+
+			<TextView
+				android:id="@+id/mainViewTvFinalScore"
+				android:textColor="@color/black_text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text=""
+				android:textSize="40sp"
+				android:textStyle="bold|italic" />
+
+		</LinearLayout>
+
 		<!--        <include layout="@layout/fluid_web_bg"/>-->
 		<!--这里不include也行-->
 
@@ -29,6 +55,7 @@
 			android:orientation="vertical">
 
 			<TextView
+				android:id="@+id/mainViewListeningTitle"
 				android:textColor="@color/black_text"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
@@ -122,10 +149,10 @@
 			android:paddingTop="20sp">
 
 			<TextView
+				android:id="@+id/mainViewReadingTitle"
 				android:textColor="@color/black_text"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-
 				android:text="阅读部分"
 				android:textSize="40sp"
 				android:textStyle="bold" />
@@ -211,10 +238,10 @@
 			android:orientation="vertical">
 
 			<TextView
+				android:id="@+id/mainViewWritAndTransTitle"
 				android:textColor="@color/black_text"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-
 				android:text="其他"
 				android:textSize="40sp"
 				android:textStyle="bold" />
